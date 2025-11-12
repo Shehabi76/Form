@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<form action="https://formspree.io/f/xkgkndbw" method="POST">
-  <label for="name">Name</label>
-  <input type="text" name="name" required>
- 
-  <label for="email">Email</label>
-  <input type="email" name="email" required>
- 
-  <label for="message">Message</label>
-  <textarea name="message" rows="5" required></textarea>
- 
-  <button type="submit">Send</button>
-</form>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: "Tahoma", sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
 
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Contact Form</h2>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Exaple: 0501234567">
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="notes">Note:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Write Your Note Here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
